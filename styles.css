@@ -500,7 +500,7 @@ select
 }
 
 
-nput:not([type="radio"]):focus,
+input:not([type="radio"]):focus,
 textarea:focus,
 select:focus{
     outline:none;
