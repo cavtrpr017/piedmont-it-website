@@ -1,1 +1,1 @@
-console.log('Piedmont-IT website loaded');
+console.log('Piedmont-IT loaded');

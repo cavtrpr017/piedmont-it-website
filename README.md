@@ -1,1 +1,1 @@
-Upload Logo-hi-res.png and Header-hi-res.png into assets folder. Deploy to Azure Static Web Apps. App location=/ API blank Output blank. Add custom domains piedmont-it.com and www.piedmont-it.com.
+Place your uploaded Logo-hi-res.png and Header-hi-res.png into assets folder. Deploy to Azure Static Web Apps. App location=/ API blank Output blank.
