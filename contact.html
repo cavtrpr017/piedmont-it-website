@@ -70,22 +70,23 @@ we'd love to talk.
 
 <h2>Contact Us</h2>
 
-<form
 
-action="https://formsubmit.co/steven.smith017@gmail.com"
+<form
+action="https://api.web3forms.com/submit"
 method="POST">
 
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_subject" value="New Piedmont‑IT Website Submission">
-<input type="hidden" name="_replyto" value="">
-<input type="hidden" name="_autoresponse" value="Thank you for contacting Piedmont-IT. We received your message and will respond shortly.">
+    <input
+        type="hidden"
+        name="access_key"
+        value="c1d5562d-cf36-4e4f-96e3-00b610de5653">
 
-<input type="hidden" name="_next"
-value="https://piedmont-it.com/thankyou.html">
+    <input
+        type="hidden"
+        name="subject"
+        value="New Piedmont‑IT Contact Request">
 
 <div class="form-group">
-<label>Full Name</label>
+<label>Full Name (required)</label>
 <input type="text" name="Full Name" required>
 </div>
 
@@ -95,7 +96,7 @@ value="https://piedmont-it.com/thankyou.html">
 </div>
 
 <div class="form-group">
-<label>Email Address</label>
+<label>Email Address (required)</label>
 <input type="email" name="Email Address" required>
 </div>
 
@@ -135,6 +136,11 @@ class="btn btn-primary">
 Send Message
 
 </button>
+
+<input
+type="hidden"
+name="redirect"
+value="https://piedmont-it.com/thankyou.html">
 
 </form>
 
