@@ -50,17 +50,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 color = "#c62828";
             }
 
-            assessmentScore.innerHTML = `
-                <h2>Your Assessment Score</h2>
+            
+			
+assessmentScore.innerHTML = `
+    <h2>Your Assessment Score</h2>
 
-                <p>
-                    <strong>${score} Yes Answers</strong>
-                </p>
+    <p>
+        <strong>${score} Yes Answers</strong>
+    </p>
 
-                <h3 style="color:${color}">
-                    ${result}
-                </h3>
-            `;
+    <h3 style="color:${color}">
+        ${result}
+    </h3>
+`;
+
+
         }
 
         radios.forEach(function (radio) {
