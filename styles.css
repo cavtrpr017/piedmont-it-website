@@ -761,7 +761,7 @@ footer{
 ========================================== */
 
 .assessment-section{
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 
 .assessment-header{
@@ -783,7 +783,7 @@ footer{
     border-radius:14px;
     padding:20px;
     box-shadow:var(--shadow-sm);
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 .assessment-question h4{
