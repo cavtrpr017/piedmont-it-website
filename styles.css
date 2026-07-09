@@ -1139,3 +1139,61 @@ footer{
     }
 
 }
+
+/* ==========================================
+   PRICING PAGE
+========================================== */
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.pricing-card{
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:var(--shadow-md);
+    text-align:center;
+}
+
+.pricing-card h3{
+    color:var(--navy);
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:800;
+    color:var(--green);
+    margin-bottom:25px;
+}
+
+.price span{
+    font-size:1rem;
+    color:var(--gray);
+}
+
+.pricing-card ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+}
+
+.pricing-card li{
+    margin-bottom:12px;
+}
+
+.pricing-card.featured{
+    border:3px solid var(--green);
+    transform:scale(1.03);
+}
+
+@media(max-width:900px){
+
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+
+}
