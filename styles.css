@@ -1273,3 +1273,101 @@ footer{
 
 }
 
+/* ==========================
+   PRICING PAGE FIXES
+   Added to correct pricing page spacing and layout
+========================== */
+
+.pricing-hero {
+    padding: 90px 0;
+}
+
+.pricing-hero p {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.pricing-features {
+    background: #f5f7fa;
+    padding: 60px 0;
+}
+
+.pricing-features .section-header {
+    margin-bottom: 35px;
+}
+
+.pricing-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pricing-feature-box {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--navy);
+    box-shadow: var(--shadow-sm);
+}
+
+.pricing-plans-section {
+    padding: 70px 0 80px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    align-items: stretch;
+}
+
+.pricing-card {
+    min-height: 100%;
+}
+
+.pricing-custom-section {
+    padding: 60px 0;
+}
+
+.pricing-custom-section .cta-banner {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .pricing-hero {
+        padding: 70px 0;
+    }
+
+    .pricing-feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 560px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .pricing-hero {
+        padding: 55px 0;
+    }
+
+    .pricing-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-plans-section {
+        padding: 50px 0 60px;
+    }
+}
+
