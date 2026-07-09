@@ -1140,6 +1140,7 @@ footer{
 
 }
 
+
 /* ==========================================
    PRICING PAGE
 ========================================== */
@@ -1147,53 +1148,128 @@ footer{
 .pricing-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    gap:35px;
+
+    max-width:1200px;
+    margin:60px auto 0;
 }
 
 .pricing-card{
     background:white;
-    padding:40px;
-    border-radius:18px;
+
+    border-radius:20px;
+
+    padding:40px 35px;
+
     box-shadow:var(--shadow-md);
+
     text-align:center;
+
+    transition:var(--transition);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.pricing-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-lg);
 }
 
 .pricing-card h3{
     color:var(--navy);
-    margin-bottom:20px;
+    font-size:2rem;
+    margin-bottom:18px;
 }
 
 .price{
-    font-size:3rem;
+    font-size:3.5rem;
     font-weight:800;
+
     color:var(--green);
-    margin-bottom:25px;
+
+    margin-bottom:10px;
 }
 
 .price span{
+    display:block;
     font-size:1rem;
+    font-weight:500;
+
     color:var(--gray);
 }
 
 .pricing-card ul{
     list-style:none;
+
+    margin:30px 0;
+
     padding:0;
-    margin:0 0 30px;
 }
 
 .pricing-card li{
-    margin-bottom:12px;
+    padding:12px 0;
+
+    border-bottom:1px solid #e9ecef;
+}
+
+.pricing-card li:last-child{
+    border-bottom:none;
+}
+
+.pricing-card .btn{
+    margin-top:auto;
 }
 
 .pricing-card.featured{
-    border:3px solid var(--green);
-    transform:scale(1.03);
+    border:4px solid var(--green);
+    transform:scale(1.05);
+}
+
+.pricing-card.featured::before{
+    content:"MOST POPULAR";
+
+    display:block;
+
+    background:var(--green);
+
+    color:white;
+
+    font-size:.8rem;
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    padding:10px;
+
+    border-radius:999px;
+
+    margin-bottom:25px;
+}
+
+.pricing-hero{
+    padding:110px 0;
+}
+
+.pricing-hero p{
+    max-width:700px;
+    margin:20px auto 0;
+}
+
+.pricing-header{
+    margin-bottom:60px;
 }
 
 @media(max-width:900px){
 
     .pricing-grid{
         grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .pricing-card.featured{
+        transform:none;
     }
 
 }
+
