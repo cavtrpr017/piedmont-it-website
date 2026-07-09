@@ -1,29 +1,22 @@
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const mobileToggle = document.querySelector(".mobile-menu");
     const navLinks = document.querySelector(".nav-links");
 
     if (mobileToggle && navLinks) {
-
         mobileToggle.addEventListener("click", function () {
-
             navLinks.classList.toggle("active");
-
         });
-
     }
 
-    const assessmentScore =
-        document.getElementById("assessmentScore");
+    const assessmentScore = document.getElementById("assessmentScore");
 
     if (assessmentScore) {
 
-        const radios =
-            document.querySelectorAll(
-                'input[type="radio"]'
-            );
+        const radios = document.querySelectorAll(
+            'input[type="radio"]'
+        );
 
         function calculateScore() {
 
@@ -33,66 +26,50 @@ document.addEventListener("DOMContentLoaded", function () {
                 .querySelectorAll(
                     'input[type="radio"]:checked'
                 )
-                .forEach(function(radio){
+                .forEach(function (radio) {
 
-                    if(radio.value === "Yes"){
+                    if (radio.value === "Yes") {
                         score++;
                     }
 
                 });
 
-            
-let result;
-let color;
+            let result;
+            let color;
 
-if(score >= 10){
+            if (score >= 10) {
+                result = "Low Risk";
+                color = "#2e7d32";
+            }
+            else if (score >= 6) {
+                result = "Moderate Risk";
+                color = "#f9a825";
+            }
+            else {
+                result = "High Risk";
+                color = "#c62828";
+            }
 
-    result = "Low Risk";
-    color = "#2e7d32";
+            assessmentScore.innerHTML = `
+                <h2>Your Assessment Score</h2>
 
-}
-else if(score >= 6){
+                <p>
+                    <strong>${score} Yes Answers</strong>
+                </p>
 
-    result = "Moderate Risk";
-    color = "#f9a825";
-
-}
-else{
-
-    result = "High Risk";
-    color = "#c62828";
-
-}
-
-
-            
-assessmentScore.innerHTML = `
-
-<h2>Your Assessment Score</h2>
-
-<p>
-    <strong>${score} Yes Answers</strong>
-</p>
-
-<h3 style="color:${color}">
-    ${result}
-</h3>
-
-`;
-
-
+                <h3 style="color:${color}">
+                    ${result}
+                </h3>
+            `;
         }
 
-        radios.forEach(function(radio){
-
+        radios.forEach(function (radio) {
             radio.addEventListener(
                 "change",
                 calculateScore
             );
-
         });
 
     }
 
 });
-
