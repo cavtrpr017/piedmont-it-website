@@ -871,3 +871,80 @@ footer{
     }
 }
 
+/* ==========================================
+   OWNER SECTION
+========================================== */
+
+.owner-card{
+    background:white;
+    border-radius:14px;
+    padding:50px;
+    box-shadow:var(--shadow-md);
+}
+
+.owner-content{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.owner-content h2{
+    color:var(--navy);
+    margin-bottom:20px;
+}
+
+.owner-content p{
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   TRUST STATS
+========================================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:40px;
+}
+
+.stat-box{
+    background:rgba(255,255,255,.15);
+    border-radius:14px;
+    padding:20px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:2rem;
+    color:white;
+    margin-bottom:5px;
+}
+
+.stat-box p{
+    margin:0;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .owner-card{
+        padding:30px;
+    }
+
+}
+
+@media(max-width:640px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+}
