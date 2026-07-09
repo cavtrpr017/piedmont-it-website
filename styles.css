@@ -981,11 +981,33 @@ footer{
 ========================================== */
 
 .emergency-banner{
-    margin:20px 0;
-    padding:15px 20px;
+    margin:25px 0;
+
+    padding:18px 22px;
+
     background:#fff7e6;
-    border-left:5px solid var(--green);
-    border-radius:10px;
+    border-left:6px solid var(--green);
+    border-radius:12px;
+
+    color:var(--navy);
+
+    font-size:1rem;
+    font-weight:600;
+
+    box-shadow:var(--shadow-sm);
+}
+
+.emergency-banner strong{
+    color:var(--navy);
+}
+
+.emergency-banner a{
+    color:var(--green);
+    font-weight:700;
+}
+
+.emergency-banner a:hover{
+    text-decoration:underline;
 }
 
 /* ==========================================
