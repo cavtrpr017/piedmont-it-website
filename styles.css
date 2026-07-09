@@ -116,16 +116,18 @@ header{
 }
 
 .logo-tagline{
+    display:block;
     width:100%;
     text-align:center;
 
-    font-size:.75rem;
-    font-weight:500;
+    font-size:1.3rem;
+    font-weight:600;
     color:var(--gray);
 
     margin-top:8px;
 
-    letter-spacing:.5px;
+    letter-spacing:.4px;
+    line-height:1.2;
 }
 
 @media(max-width:900px){
