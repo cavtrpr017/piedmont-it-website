@@ -93,8 +93,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:15px;
-    padding:12px 0;
+
+    gap:30px;
+
+    padding:18px 0;
 }
 
 .navbar > *{
@@ -109,7 +111,7 @@ header{
     text-align:center;
 
     width:100%;
-    max-width:444px;
+    max-width:600px;
     min-width:0;
 }
 
@@ -117,7 +119,7 @@ header{
     display:block;
     margin:0 auto;
     width:100%;
-    max-width:444px;
+    max-width:600px;
     height:auto;
 }
 
@@ -139,7 +141,7 @@ header{
 @media (max-width:900px){
 
     .logo{
-        max-width:220px;
+        max-width:320px;
     }
 
     .logo-tagline{
@@ -151,7 +153,7 @@ header{
 @media (max-width:640px){
 
     .logo{
-        max-width:140px;
+        max-width:220px;
     }
 
 }
