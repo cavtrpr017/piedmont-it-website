@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 color = "#f9a825";
             }
             else {
-                result = "High Risk";
+                result = "High Risk - Call us at (336) 900-5202 for prompt support";
                 color = "#c62828";
             }
 
