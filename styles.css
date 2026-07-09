@@ -273,11 +273,18 @@ header{
     opacity:.95;
 }
 
+
 .hero-buttons{
     display:flex;
+    justify-content:center;
+
+    flex-wrap:wrap;
+
     gap:20px;
-    margin-bottom:40px;
+
+    margin:45px 0;
 }
+
 
 .trust-badges{
     display:flex;
