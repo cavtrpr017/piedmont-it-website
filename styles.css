@@ -907,32 +907,6 @@ footer{
 }
 
 /* ==========================================
-   OWNER SECTION
-========================================== */
-
-.owner-card{
-    background:white;
-    border-radius:14px;
-    padding:50px;
-    box-shadow:var(--shadow-md);
-}
-
-.owner-content{
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-}
-
-.owner-content h2{
-    color:var(--navy);
-    margin-bottom:20px;
-}
-
-.owner-content p{
-    margin-bottom:20px;
-}
-
-/* ==========================================
    TRUST STATS
 ========================================== */
 
@@ -982,39 +956,6 @@ footer{
         grid-template-columns:1fr;
     }
 
-}
-
-/* ==========================================
-   PROFESSIONAL FOUNDER SECTION
-========================================== */
-
-.owner-profile{
-    display:grid;
-    grid-template-columns:320px 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.owner-photo img{
-    width:100%;
-    border-radius:20px;
-    box-shadow:var(--shadow-lg);
-}
-
-.owner-label{
-    color:var(--green);
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.owner-content h2{
-    margin:10px 0 20px;
-    color:var(--navy);
-}
-
-.owner-content p{
-    margin-bottom:15px;
 }
 
 /* ==========================================
@@ -1086,6 +1027,76 @@ footer{
 
     .location-grid{
         grid-template-columns:1fr;
+    }
+
+}
+
+/* ==========================================
+   FOUNDER SECTION
+========================================== */
+
+.owner-section{
+    background:#f8fafc;
+}
+
+.owner-profile{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:60px;
+    align-items:center;
+
+    background:white;
+    border-radius:20px;
+    padding:50px;
+
+    box-shadow:var(--shadow-md);
+}
+
+.owner-photo img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:var(--shadow-lg);
+}
+
+.owner-label{
+    display:inline-block;
+
+    color:var(--green);
+
+    font-size:.9rem;
+    font-weight:700;
+
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+}
+
+.owner-content h2{
+    color:var(--navy);
+    margin-bottom:20px;
+}
+
+.owner-content p{
+    margin-bottom:18px;
+    line-height:1.8;
+}
+
+.owner-content .btn{
+    margin-top:15px;
+}
+
+@media(max-width:900px){
+
+    .owner-profile{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:35px;
+    }
+
+    .owner-photo{
+        max-width:280px;
+        margin:auto;
     }
 
 }
