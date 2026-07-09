@@ -41,30 +41,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 });
 
-            let result;
+            
+let result;
+let color;
 
-            if(score >= 10){
+if(score >= 10){
 
-                result =
-                    "Resilient - Your environment appears highly proactive.";
+    result = "Low Risk";
+    color = "#2e7d32";
 
-            } else if(score >= 6){
+}
+else if(score >= 6){
 
-                result =
-                    "Moderate Risk - Several gaps may exist.";
+    result = "Moderate Risk";
+    color = "#f9a825";
 
-            } else {
+}
+else{
 
-                result =
-                    "High Risk - Significant improvements are recommended.";
+    result = "High Risk";
+    color = "#c62828";
 
-            }
+}
 
-            assessmentScore.innerHTML = `
-                <h2>Your Assessment Score</h2>
-                <p><strong>${score} Yes Answers</strong></p>
-                <p>${result}</p>
-            `;
+
+            
+assessmentScore.innerHTML = `
+
+<h2>Your Assessment Score</h2>
+
+<p>
+    <strong>${score} Yes Answers</strong>
+</p>
+
+<h3 style="color:${color}">
+    ${result}
+</h3>
+
+`;
+
 
         }
 

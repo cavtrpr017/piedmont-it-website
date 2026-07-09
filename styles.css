@@ -983,3 +983,109 @@ footer{
     }
 
 }
+
+/* ==========================================
+   PROFESSIONAL FOUNDER SECTION
+========================================== */
+
+.owner-profile{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.owner-photo img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:var(--shadow-lg);
+}
+
+.owner-label{
+    color:var(--green);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.owner-content h2{
+    margin:10px 0 20px;
+    color:var(--navy);
+}
+
+.owner-content p{
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   TRUST BANNER
+========================================== */
+
+.trust-banner{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
+}
+
+.trust-item{
+    background:rgba(255,255,255,.15);
+    padding:12px 18px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+/* ==========================================
+   EMERGENCY SUPPORT
+========================================== */
+
+.emergency-banner{
+    margin:20px 0;
+    padding:15px 20px;
+    background:#fff7e6;
+    border-left:5px solid var(--green);
+    border-radius:10px;
+}
+
+/* ==========================================
+   SERVICE AREA
+========================================== */
+
+.location-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.location-grid div{
+    background:white;
+    padding:20px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:var(--shadow-sm);
+    font-weight:600;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:900px){
+
+    .owner-profile{
+        grid-template-columns:1fr;
+    }
+
+    .location-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:640px){
+
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+
+}
