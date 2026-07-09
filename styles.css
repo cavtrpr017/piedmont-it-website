@@ -90,12 +90,15 @@ header{
 }
 
 .navbar{
-    
-	display:flex;
+    display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:20px;
-    padding:16px 0;
+    gap:15px;
+    padding:12px 0;
+}
+
+.navbar > *{
+    flex-shrink:1;
 }
 
 .logo{
@@ -104,7 +107,10 @@ header{
     align-items:center;
     justify-content:center;
     text-align:center;
-    min-width:444px;
+
+    width:100%;
+    max-width:444px;
+    min-width:0;
 }
 
 .logo img{
@@ -130,12 +136,64 @@ header{
     line-height:1.2;
 }
 
-@media(max-width:900px){
+@media (max-width:900px){
+
+    .logo{
+        max-width:220px;
+    }
+
     .logo-tagline{
         display:none;
     }
+
 }
 
+@media (max-width:640px){
+
+    .logo{
+        max-width:140px;
+    }
+
+}
+
+@media (max-width:640px){
+
+    .hero{
+        padding:60px 0;
+    }
+
+    
+	.hero p{
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .tagline{
+        font-size:0.95rem;
+    }
+
+}
+
+@media (max-width:640px){
+
+    .card,
+    .industry-card,
+    .service-card,
+    .feature-box,
+    .form-card{
+        padding:20px;
+    }
+
+    section{
+        padding:50px 0;
+    }
+
+}
 
 .nav-links{
     display:flex;
