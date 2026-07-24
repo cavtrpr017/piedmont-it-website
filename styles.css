@@ -1371,3 +1371,72 @@ footer{
     }
 }
 
+/* ==========================================
+   FINAL HOVER BEHAVIOR FIX
+   Purpose: only hyperlink tiles should pop out.
+   Non-link informational tiles stay still.
+   Keep this block at the very end of styles.css.
+========================================== */
+
+/* Disable pop-out behavior for non-clickable informational tiles */
+.card:hover,
+.feature-box:hover,
+.service-card:hover,
+.industry-card:hover,
+.pricing-card:hover,
+.pricing-feature-box:hover,
+.stat-box:hover,
+.assessment-question:hover,
+.results-card:hover{
+    transform:none !important;
+    box-shadow:var(--shadow-sm) !important;
+    cursor:default !important;
+    outline:none !important;
+}
+
+/* Keep featured pricing card visually featured, but not interactive */
+.pricing-card.featured:hover{
+    transform:scale(1.05) !important;
+    box-shadow:var(--shadow-md) !important;
+    cursor:default !important;
+}
+
+@media(max-width:900px){
+    .pricing-card.featured:hover{
+        transform:none !important;
+    }
+}
+
+/* Re-enable pop-out behavior only when the tile itself is a hyperlink */
+a.card,
+a.feature-box,
+a.service-card,
+a.industry-card,
+a.pricing-card,
+.clickable-card{
+    cursor:pointer !important;
+    transition:var(--transition);
+}
+
+a.card:hover,
+a.feature-box:hover,
+a.service-card:hover,
+a.industry-card:hover,
+a.pricing-card:hover,
+.clickable-card:hover{
+    transform:translateY(-6px) !important;
+    box-shadow:var(--shadow-lg) !important;
+    cursor:pointer !important;
+    outline:2px solid rgba(87,148,58,.25) !important;
+    outline-offset:3px !important;
+}
+
+/* Buttons and text links remain interactive */
+.btn:hover,
+.nav-links a:hover,
+.footer-column a:hover{
+    cursor:pointer !important;
+}
+
+/* END FINAL HOVER BEHAVIOR FIX */
+

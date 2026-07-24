@@ -1,0 +1,29 @@
+Piedmont-IT corrected hover behavior package
+
+This package fixes the regression where non-hyperlink tiles started popping out again.
+
+Upload these files to the root of your GitHub repository and replace existing files when prompted:
+
+1. styles.css
+2. index.html
+3. about.html
+4. sitemap.xml
+5. robots.txt
+6. All included SEO landing pages if you want the full corrected set deployed together
+
+Most important fix:
+- styles.css now ends with a final hover override block.
+- Non-link tiles such as .card, .feature-box, .service-card, .pricing-card, .stat-box, and assessment/result cards do not pop out.
+- Hyperlink tiles such as <a class="industry-card"> still pop out and show a subtle outline.
+
+Clean homepage preserved:
+- index.html does not contain Meet Steven Smith.
+- index.html does not contain the owner-section.
+- index.html does not contain Our Mission.
+- about.html contains the founder/about content.
+
+After uploading:
+1. Hard refresh the site.
+2. Hover over Core Services tiles: they should not pop out.
+3. Hover over linked Industry tiles: they should pop out.
+4. Confirm Meet Steven Smith appears only on about.html.
