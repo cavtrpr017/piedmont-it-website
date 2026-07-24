@@ -1371,3 +1371,134 @@ footer{
     }
 }
 
+/* ==========================================
+   MOBILE HOVER BEHAVIOR FIX
+   Purpose:
+   - Non-link tiles never pop out.
+   - Link tiles only pop out on devices that truly support hover, such as desktop/laptop.
+   - Touch/mobile devices do not retain sticky hover transform states.
+   Keep this block at the very end of styles.css.
+========================================== */
+
+/* Default: all informational card-style tiles stay still */
+.card:hover,
+.feature-box:hover,
+.service-card:hover,
+.industry-card:hover,
+.pricing-card:hover,
+.pricing-feature-box:hover,
+.stat-box:hover,
+.assessment-question:hover,
+.results-card:hover,
+.card:active,
+.feature-box:active,
+.service-card:active,
+.industry-card:active,
+.pricing-card:active,
+.pricing-feature-box:active,
+.stat-box:active,
+.assessment-question:active,
+.results-card:active{
+    transform:none !important;
+    box-shadow:var(--shadow-sm) !important;
+    cursor:default !important;
+    outline:none !important;
+}
+
+/* Featured pricing card remains visually featured on desktop, but does not behave like a link */
+.pricing-card.featured:hover,
+.pricing-card.featured:active{
+    transform:scale(1.05) !important;
+    box-shadow:var(--shadow-md) !important;
+    cursor:default !important;
+}
+
+@media(max-width:900px){
+    .pricing-card.featured:hover,
+    .pricing-card.featured:active{
+        transform:none !important;
+    }
+}
+
+/* Desktop/laptop only: hyperlink tiles may pop out */
+@media (hover:hover) and (pointer:fine){
+    a.card,
+    a.feature-box,
+    a.service-card,
+    a.industry-card,
+    a.pricing-card,
+    .clickable-card{
+        cursor:pointer !important;
+        transition:var(--transition);
+    }
+
+    a.card:hover,
+    a.feature-box:hover,
+    a.service-card:hover,
+    a.industry-card:hover,
+    a.pricing-card:hover,
+    .clickable-card:hover{
+        transform:translateY(-6px) !important;
+        box-shadow:var(--shadow-lg) !important;
+        cursor:pointer !important;
+        outline:2px solid rgba(87,148,58,.25) !important;
+        outline-offset:3px !important;
+    }
+}
+
+/* Touch/mobile/tablet: prevent sticky hover pop-out even on hyperlink tiles */
+@media (hover:none), (pointer:coarse){
+    .card:hover,
+    .feature-box:hover,
+    .service-card:hover,
+    .industry-card:hover,
+    .pricing-card:hover,
+    .pricing-feature-box:hover,
+    .stat-box:hover,
+    .assessment-question:hover,
+    .results-card:hover,
+    a.card:hover,
+    a.feature-box:hover,
+    a.service-card:hover,
+    a.industry-card:hover,
+    a.pricing-card:hover,
+    .clickable-card:hover,
+    .card:active,
+    .feature-box:active,
+    .service-card:active,
+    .industry-card:active,
+    .pricing-card:active,
+    .pricing-feature-box:active,
+    .stat-box:active,
+    .assessment-question:active,
+    .results-card:active,
+    a.card:active,
+    a.feature-box:active,
+    a.service-card:active,
+    a.industry-card:active,
+    a.pricing-card:active,
+    .clickable-card:active{
+        transform:none !important;
+        box-shadow:var(--shadow-sm) !important;
+        outline:none !important;
+    }
+
+    a.card,
+    a.feature-box,
+    a.service-card,
+    a.industry-card,
+    a.pricing-card,
+    .clickable-card{
+        cursor:pointer !important;
+    }
+}
+
+/* Buttons and text links remain visibly interactive */
+.btn:hover,
+.nav-links a:hover,
+.footer-column a:hover{
+    cursor:pointer !important;
+}
+
+/* END MOBILE HOVER BEHAVIOR FIX */
+
