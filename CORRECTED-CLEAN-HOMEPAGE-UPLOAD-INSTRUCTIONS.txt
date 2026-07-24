@@ -1,0 +1,20 @@
+Piedmont-IT corrected SEO package - clean homepage restored
+
+This package fixes the issue where the latest update accidentally put founder/about-business content back on the homepage.
+
+Upload the files in this ZIP to the root of your GitHub repository and replace existing files when prompted.
+
+Most important corrections:
+- index.html is restored to the cleaned homepage structure.
+- index.html does NOT contain the founder/owner section.
+- index.html does NOT contain the About/Mission business narrative.
+- about.html contains the mission, business background, and Meet Steven Smith section.
+- Footer includes Greensboro, High Point, Burlington, Winston-Salem, Kernersville, and Lexington.
+- sitemap.xml includes Kernersville and Lexington plus the rest of the SEO page set.
+- app.js references and existing form actions remain unchanged.
+
+Recommended upload order:
+1. Upload the full ZIP contents.
+2. Verify homepage does not show the Meet Steven section.
+3. Verify About page does show the Meet Steven section.
+4. Test /sitemap.xml, /it-support-kernersville.html, and /it-support-lexington.html.
